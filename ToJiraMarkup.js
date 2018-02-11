@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (delimiter === "")
             delimiter = tbInput.value.trim();
         return delimiter;
-    };
+    }
 
     function getInput() { return taInput.value.trim(); }
     function setOutput(output) {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var table = parseText(input, delimiter);
         var output = makeMarkup(table, getHasHeaders());
         setOutput(output);
-    };
+    }
 
     function onCopyClicked() {
         document.execCommand('copy');
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var ctl = document.getElementById(id);
         ctl.addEventListener(evt, makeTable);
         return ctl;
-    };
+    }
 
     taInput = setupInput('_input', 'input');
     cbHasHeaders = setupInput('_hasHeaders', 'change');
