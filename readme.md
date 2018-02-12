@@ -1,4 +1,6 @@
-Delimited text to Jira Markup converter
+# Delimited text to Jira Markup converter
 
 Converts delimited text to Jira markup.
 Confluence has macros for this, but pasting into Issues doesn't have this in our installation.
+
+Uses https://github.com/mholt/PapaParse for parsing text into a table.
