@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function getInput() { return taInput.value.trim(); }
     function setOutput(output) {
         taOutput.value = output;
-        taOutput.select();
     }
 
     function getHasHeaders() { return cbHasHeaders.checked; }
@@ -84,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function onCopyClicked() {
+        taOutput.select();
         document.execCommand('copy');
     }
 
