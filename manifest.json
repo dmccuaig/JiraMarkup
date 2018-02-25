@@ -1,15 +1,16 @@
 {
   "manifest_version": 2,
 
-  "name": "Delimited text to Jira Markup",
+  "name": "Delimited text to Jira table Markup",
   "description": "Convert delimited text to Jira Markup",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "ToJiraMarkup.html"
   },
   "permissions": [
-   "activeTab"
+    "activeTab",
+    "storage"
    ]
 }
